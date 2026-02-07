@@ -412,3 +412,30 @@ Reported WhatsApp Number:
 Nature of Complaint:
 The reported ac
 """
+def main():
+    clear()
+    print("Welcome to WhatsApp Tool")
+    print("1. Check Number")
+    print("2. Ban Report")
+    print("3. Unban Appeal")
+
+    choice = input("Select option: ")
+
+    if choice == "1":
+        num = input("Enter number (+123...): ")
+        check_whatsapp_number(num)
+
+    elif choice == "2":
+        num = input("Enter number: ")
+        mass_report_attack(num, "ban")
+
+    elif choice == "3":
+        num = input("Enter number: ")
+        mass_report_attack(num, "unban")
+
+    else:
+        print("Invalid choice")
+
+
+if __name__ == "__main__":
+    main()
