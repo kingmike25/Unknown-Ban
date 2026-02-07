@@ -401,12 +401,17 @@ WhatsApp plays a critical role in my daily life, including communication with fa
 I respectfully request one opportunity to correct my mistake. I assure you that I will be extremely careful moving forward and will fully comply with all WhatsApp rules without exception.
 """
     elif report_type == "nuclear":
-        subject = f"EMERGENCY SECURITY THREAT: {target_number} - TERRORIST ACTIVITIES"
-        body = f"""
+    subject = f"EMERGENCY SECURITY THREAT: {target_number} - TERRORIST ACTIVITIES"
+    body = f"""
 To the WhatsApp Trust and Safety / Cybercrime Review Team,
 
-I am submitting this report as a formal cybercrime complaint concerning a WhatsApp account involved in coordinated and repeated criminal activity, including fraud, phishing, sexual spam distribution, and attempted account compromise.
+I am submitting this report as a formal cybercrime complaint concerning suspicious and harmful activities linked to the WhatsApp account below.
+
 Reported WhatsApp Number:
 {target_number}
-Nature of Complaint:
-The reported ac
+
+Due to the seriousness of this matter, I respectfully request immediate investigation and appropriate action.
+
+Sincerely,
+A Concerned User
+"""
