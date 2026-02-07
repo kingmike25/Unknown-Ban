@@ -108,14 +108,7 @@ def get_next_account():
         return account
 
 def get_next_proxy():
-    """Rotate through proxy list"""
-    global current_proxy_index
-    if not PROXY_LIST:
-        return None
-    with lock:
-        proxy = PROXY_LIST[current_proxy_index]
-        current_proxy_index = (current_proxy_index + 1) % len(PROXY_LIST)
-        return proxy
+    return None
 
 def validate_phone_number(phone):
     """Validate phone number format"""
